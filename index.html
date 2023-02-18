@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> BDA Assignment 1 </title>
+    <link rel="stylesheet" href="../static/stylesheet.css">
+</head>
+<body>
+    <h1>Made by yours truly</h1>
+    <center>
+    <p><em><a href = "{{ url_for('fasih') }}">Fasih Ur Rehman</a>, <a href = "{{ url_for('ibz') }}">Ibrahim Akhtar</a>, & <a href = "{{ url_for('afaq') }}">Afaq Alam</a></em></p>
+    </center>
+    <hr>
+    <br><br>
+    <div class = "center">
+        <form action = "http://localhost:5000/uploader" method = "POST"
+             enctype = "multipart/form-data">
+            <br><br><br><br><br><br><br><br><br>
+            <input type="file" id="image" name="file">
+            <input type="submit" value="Upload">
+        </form>
+    </div>
+</body>
+<footer>
+    <center>
+    <br><br><br>
+    <p>I hope this works<br>toodaloo</p>
+        </center>
+</footer>
+</html>
